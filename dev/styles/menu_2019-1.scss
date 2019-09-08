@@ -1,0 +1,194 @@
+$nav_background: transparent;
+// nav
+body {
+    font-family: 'Roboto', sans-serif;
+    background: white;
+
+    .top_nav {
+        position: fixed;
+        right: 0;
+        width: 100vw;
+        display: flex;
+        justify-content: flex-end;
+        background: $nav_background;
+        padding: .3vw 10vw;
+        ul {
+            display: flex;
+            justify-content: flex-end;
+            border-bottom: 1px #fff solid;
+            width: 65vw;
+            li {
+                display: flex;
+                align-items: center;
+                list-style: none;
+                padding: 0 .5vw;
+                a {
+                    color: #fff;
+                    text-decoration: none;
+                    img {
+                        width: 32px;
+                    }
+                }
+            }
+        }
+        @media screen and (max-width: 990px) {
+            display: none;
+        }
+    }
+    nav {
+        position: fixed;
+        top: 44px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        z-index: 100;
+        width: 100%;
+        padding: 0 10vw;
+        height: 90px;
+        transition: all 500ms;
+        color: blue;
+        font-family: 'Roboto', sans-serif;
+        background: $nav_background;
+            .logo a img {
+                width: 135px;
+                padding-bottom: 45px;
+                @media screen and (max-width: 990px) {
+                    width: 70px;
+                    padding-bottom: 0px;
+                }
+            }
+            // PC
+            .PC_nav {
+                display: flex;
+                justify-content: space-around;
+                width: 45vw;
+                height: 100%;
+                list-style: none;
+                font-weight: 900;
+                letter-spacing: 0.02rem;
+                li {
+                    border-bottom: 3px transparent solid;
+                    &:hover {
+                        border-bottom: 3px red solid;
+                        transition: all 700ms;
+                    }
+                    a {
+                        display: flex;
+                        align-items: center;
+                        text-decoration: none;
+                        color: #fff;
+                        padding: 0 2vw;
+                        height: 100%;
+                    }
+                }
+                @media screen and (max-width: 990px) {
+                    display: none;
+                }
+            }
+            .contacts {
+                a {
+                    text-decoration: none;
+                    font-weight: 300;
+                    letter-spacing: 0.02rem;
+                    color: #fff;
+                }
+                @media screen and (max-width: 990px) {
+                    display: none;
+                }
+            }
+            // mobile
+            .toggle {
+                position: fixed;
+                top: 0;
+                right: 0;
+                display: flex;
+                flex-flow: column nowrap;
+                justify-content: space-around;
+                width: 60px;
+                height: 60px;
+                padding: 15px;
+                transition: all 600ms;
+                background-color: black;
+                cursor: pointer;
+                z-index: 10;
+                @media screen and (min-width: 991px) {
+                    display: none;
+                }
+                span {
+                    display: block;
+                    width: 100%;
+                    height: 1px;
+                    background: white;
+                    transition: all 300ms;
+                }
+                .transFirst {
+                    transform: rotate(45deg);
+                    transform-origin: 10px;
+                }
+                .transLast {
+                    transform: rotate(-45deg);
+                    transform-origin: 8px;
+                }
+                .mobile_navi {
+                    display: none;
+                    justify-content: center;
+                    align-items: center;
+                    position: absolute;
+                    width: max-content;
+                    height: 100vh;
+                    width: 95vw;
+                    .close_toggle {
+                        position: absolute;
+                        right: 1px;
+                        top: 7.5px;
+                        width: 32px;
+                        height: 32px;
+                        margin-top: 5px;
+                        padding: 10px 25px 40px 25px;
+                        opacity: 0.3;
+                        &:before, &:after {
+                            position: absolute;
+                            left: 15px;
+                            content: ' ';
+                            height: 33px;
+                            width: 2px;
+                            background-color: black;
+                        } 
+                        &:before {
+                            transform: rotate(45deg);
+                        }
+                        &:after {
+                            transform: rotate(-45deg);
+                        }
+                    }
+                    .mobile_navi_inner {
+                        display: flex;
+                        flex-direction: column;
+                        a {
+                            text-decoration: none;
+                            margin: 5vmin 0;
+                            padding: 4vmin;
+                            background: black;
+                            color: white;
+                            font-size: 7vmin;
+                            width: 100%;
+                            text-align: center;
+                            transition: all 1000ms;
+                            opacity: 0;
+                        }
+                    }
+                }
+            }
+            .openMenu {
+                position: absolute;
+                right: 0;
+                top: 0;
+                width: 100vw;
+                height: 100vh !important;
+            }
+            @media screen and (max-width: 990px) {
+                height: 60px;
+            }
+        }     
+    }
+// end navi scss

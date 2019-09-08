@@ -1,0 +1,30 @@
+#hero {
+    display: flex;
+    align-items: center;
+    background: blue;
+    height: 100vh;
+    min-height: 600px;
+    .hero_content {
+        width: 30vw;
+        min-width: 320px;
+        margin-left: 5vw;
+        h1,h2,p {
+            color: white;
+        }
+        h1 {
+
+        }
+        h2 {
+
+        }
+        p {
+            padding: 2vw 0;
+        }
+        button {
+            background: red;
+            color: white;
+            padding: .3vw 2vw;
+            border-radius: 5px;
+        }
+    }
+}

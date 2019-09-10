@@ -1,35 +1,29 @@
 #hero {
     display: flex;
     align-items: flex-start;
-    background: #0000ee69;
+    background-color: #0000ee69;
+    background-image: url(../images/hero/hero_BG.svg);
+    background-position-x: -20vw;
+    background-position-y: -40vw;
+    background-size: 80vw;
+    background-repeat: no-repeat; 
     height: 200vh;
     width: 100%;
     min-height: 600px;
-    transition: all 500ms;
+    transition: all 1000ms;
     .hero_box {
         position: relative;
         top: 0;
         left: 0;
-        background: white;
         border-radius: 0 0 5px 0;
         padding-top: 400px;
         transition: all 500ms;
-        &:after {
-            position: absolute;
-            width: 0;
-	        height: 0;
-	        border-top: 40vw solid white; 
-            border-right: 40vw solid transparent;	
-            border-radius: 0 5px 0 0;
-            content: '';
-        }
         .hero_content {
             width: 40vw;
             min-width: 320px;
             padding: 0 5vw 0 10vw;
             transition: all 500ms;
             .hero_content_title {
-                width: 40vw;
                 transition: all 500ms;
                 h1,h2,p {
                     color: #151D51;
@@ -47,4 +41,8 @@
             
         }
     }
+}
+.hero_active {
+    background-position-x: -50vw !important;
+    background-size: 200vw !important;
 }

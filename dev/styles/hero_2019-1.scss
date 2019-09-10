@@ -3,16 +3,19 @@
     align-items: flex-start;
     background: #0000ee69;
     height: 200vh;
+    width: 100%;
     min-height: 600px;
+    transition: all 500ms;
     .hero_box {
         position: relative;
         top: 0;
+        left: 0;
         background: white;
         border-radius: 0 0 5px 0;
         padding-top: 400px;
+        transition: all 500ms;
         &:after {
             position: absolute;
-            top: -5px;
             width: 0;
 	        height: 0;
 	        border-top: 40vw solid white; 
@@ -24,24 +27,24 @@
             width: 40vw;
             min-width: 320px;
             padding: 0 5vw 0 10vw;
-            h1,h2,p {
-                color: #151D51;
+            transition: all 500ms;
+            .hero_content_title {
+                width: 40vw;
+                transition: all 500ms;
+                h1,h2,p {
+                    color: #151D51;
+                }
+                p {
+                    padding: 2vw 0;
+                }
+                button {
+                    background: red;
+                    color: white;
+                    padding: .3vw 2vw;
+                    border-radius: 5px;
+                }
             }
-            h1 {
-    
-            }
-            h2 {
-    
-            }
-            p {
-                padding: 2vw 0;
-            }
-            button {
-                background: red;
-                color: white;
-                padding: .3vw 2vw;
-                border-radius: 5px;
-            }
+            
         }
     }
 }

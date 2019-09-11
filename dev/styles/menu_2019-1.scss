@@ -5,13 +5,14 @@ body {
     background: white;
 
     .top_nav {
-        position: fixed;
+        position: absolute;
         right: 0;
         width: 100vw;
+        height: 100px;
         display: flex;
         justify-content: flex-end;
         background: $nav_background;
-        padding: .3vw 10vw;
+        padding: 50px 10vw 0 10vw;
         ul {
             display: flex;
             justify-content: flex-end;
@@ -36,8 +37,8 @@ body {
         }
     }
     nav {
-        position: fixed;
-        top: 44px;
+        position: absolute;
+        top: 90px;
         display: flex;
         justify-content: flex-end;
         align-items: center;

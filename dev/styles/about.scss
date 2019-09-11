@@ -1,0 +1,11 @@
+#about {
+    position: absolute;
+    top: 40vw;
+    width: 100%;
+    .about_tile {
+        margin: 0 10px;
+        padding: 10vw 5vw;
+        height: 1000px;
+        border-left: 3px rgb(235, 236, 241) solid;
+    }
+}

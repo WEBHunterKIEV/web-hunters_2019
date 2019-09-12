@@ -1,18 +1,22 @@
 #hero {
-    position: relative;
-    display: flex;
-    align-items: flex-start;
-    width: 100%;
-    .hero_box {
+    @media screen and (min-width: 991px) {
         position: relative;
-        background-color: #fff;
-        top: calc( -40vw + 100px );
-        left: -40vw;
-        width: 80vw;
-        height: 80vw;
-        border: 30vw rgb(235, 236, 241) solid;
-        border-radius: 50%;
-        z-index: 10;
+        display: flex;
+        align-items: flex-start;
+        width: 100%;
+    }
+    .hero_box {
+        @media screen and (min-width: 991px) {
+            position: relative;
+            background-color: #fff;
+            top: calc( -40vw + 100px );
+            left: -40vw;
+            width: 80vw;
+            height: 80vw;
+            border: 30vw rgb(235, 236, 241) solid;
+            border-radius: 50%;
+            z-index: 10;    
+        }
     }
     .heroBG {
         position: fixed;

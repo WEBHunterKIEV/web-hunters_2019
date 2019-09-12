@@ -20,11 +20,16 @@
         width: 60vw;
         min-width: 320px;
         padding: 0 5vw 0 10vw;
-        h1,h2,p {
-            color: #151D51;
+        h1 {
+            background: rgb(235, 236, 241);
+            padding: 1vw 2vw;
+            border-radius: 20px;
+            color: #0000ee69;
+            width: max-content;
         }
-        p {
-            padding: 2vw 0;
+        h2,p {
+            color: #fff;
+            padding: 1vw 0;
         }
         button {
             background: white;

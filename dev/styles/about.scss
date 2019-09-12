@@ -1,19 +1,28 @@
 #about {
     position: absolute;
-    top: 40vw;
+    top: 100vw;
     width: 100%;
     z-index: 1;
+    @media screen and (min-width: 991px) {
+        top: 40vw;
+    }
     .about_wrap {
         margin: 0 10px;
         height: 60vw;
-        border-left: 3px rgb(235, 236, 241) solid;
+        @media screen and (min-width: 991px) {
+            border-left: 3px rgb(235, 236, 241) solid;
+        }
         .about_container {
-            width: 800px;
-            margin: 100px auto;
             background: #fff; 
             border-radius: 20px; 
+            @media screen and (min-width: 991px) {
+                width: 800px;
+                margin: 100px auto;
+            }
             .about_content {
-                display: flex;
+                @media screen and (min-width: 991px) {
+                    display: flex;
+                }
                 .about_content_text {
                     display: flex;
                     flex-direction: column;

@@ -59,16 +59,13 @@ body {
                 color: #ebecf1;
                 font-size: 1.6vw;
                 width: max-content;
-            }
-            .logo a img {
-                position: absolute;
-                top: 0;
-                left: 10vw;
-                width: 135px;
-                padding-bottom: 45px;
                 @media screen and (max-width: 990px) {
-                    width: 70px;
-                    padding-bottom: 0px;
+                    position: fixed;
+                    left: 2vw;
+                    color: #0000ee69;
+                    background: #ebecf1;
+                    font-size: 20px;
+                    padding: 10px 20px;
                 }
             }
             // PC
@@ -204,6 +201,7 @@ body {
             }
             @media screen and (max-width: 990px) {
                 height: 60px;
+                top: 0;
             }
         }     
     }

@@ -1,4 +1,6 @@
 #hero {
+    display: flex;
+    justify-content: center;
     @media screen and (min-width: 991px) {
         position: relative;
         display: flex;
@@ -10,7 +12,7 @@
             position: relative;
             background-color: #fff;
             top: calc( -40vw + 100px );
-            left: -40vw;
+            left: -50vw;
             width: 80vw;
             height: 80vw;
             border: 30vw rgb(235, 236, 241) solid;
@@ -23,13 +25,17 @@
         top: 0;
         left: 0;
         width: 100vw;
-        height: 70vw;
-        background-image: url(../images/hero/profileBG.jpg);
+        height: 100vh;
+        background-image: url(../images/hero/profileBG_mobil.jpg);
         background-size: cover;
         z-index: 0;
+        @media screen and (min-width: 991px) {
+            background-image: url(../images/hero/profileBG.jpg);
+            height: 70vw;
+        }
         &::after {
             position: absolute;
-            background-color: #0000ee69;
+            background-color: #7878e3d4;
             width: 100%;
             height: 100%;
             z-index: 1;
@@ -38,18 +44,9 @@
     }
     .hero_content {
         position: absolute;
-        right: 0;
-        top: 20vw;
-        width: 60vw;
-        min-width: 320px;
-        padding: 0 5vw 0 10vw;
-        /*h1 {
-            background: rgb(235, 236, 241);
-            padding: 1vw 2vw;
-            border-radius: 20px;
-            color: #0000ee69;
-            width: max-content;
-        }*/
+        top: 30vw;
+        width: 90vw;
+        max-width: 500px;
         h2,p {
             color: #fff;
             padding: 1vw 0;
@@ -59,7 +56,12 @@
             color: #151D51;
             padding: .3vw 2vw;
             border-radius: 5px;
-        }   
+        } 
+        @media screen and (min-width: 991px) {
+            top: 20vw;
+            left: 42vw;
+            width: 60vw;
+        }
     }
 }
 .hero_active {

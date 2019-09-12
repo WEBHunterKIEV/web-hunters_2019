@@ -1,5 +1,8 @@
 #portfolio {
+    position: absolute;
     background: rgb(235, 236, 241);
+    width: 100%;
     min-height: 1000px;
     padding: 5vw;
+    z-index: 1;
 }

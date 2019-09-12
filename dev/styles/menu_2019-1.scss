@@ -13,6 +13,7 @@ body {
         justify-content: flex-end;
         background: $nav_background;
         padding: 50px 10vw 0 10vw;
+        z-index: 1;
         ul {
             display: flex;
             justify-content: flex-end;
@@ -50,6 +51,16 @@ body {
         color: blue;
         font-family: 'Roboto', sans-serif;
         background: $nav_background;
+            h1 {
+                position: absolute;
+                left: 15vw;
+                background: #0000ee54;
+                padding: 1vw 2vw;
+                border-radius: 20px;
+                color: #ebecf1;
+                font-size: 1.6vw;
+                width: max-content;
+            }
             .logo a img {
                 position: absolute;
                 top: 0;
@@ -80,7 +91,9 @@ body {
                         display: flex;
                         align-items: center;
                         text-decoration: none;
+                        text-transform: uppercase;
                         color: #fff;
+                        font-size: 1vw;
                         padding: 0 2vw;
                         height: 100%;
                     }

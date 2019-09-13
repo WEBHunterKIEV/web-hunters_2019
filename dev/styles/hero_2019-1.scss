@@ -6,12 +6,15 @@
         min-height: 100vh;
         justify-content: center;
         align-items: center;
+        @media screen and (min-width: 991px) {
+            min-height: 50vw;
+        }
         .hero_box {
             @media screen and (min-width: 991px) {
                 position: absolute;
                 background-color: #fff;
                 top: calc( -40vw + 100px );
-                left: -40vw;
+                left: calc( -40vw + 20px );;
                 width: 80vw;
                 height: 80vw;
                 border: 30vw rgb(235, 236, 241) solid;
@@ -29,6 +32,12 @@
                 color: #fff;
                 padding: 3vh 0;
                 text-align: justify;
+            }
+            h2 {
+                @media screen and (min-width: 991px) {
+                    font-size: 1.5vw;
+                    text-align: unset;
+                }
             }
             button {
                 background: white;

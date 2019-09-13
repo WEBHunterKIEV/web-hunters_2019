@@ -3,9 +3,20 @@
     margin: 0;
     box-sizing: border-box;
 }
+body {
+    min-width: 315px;
+    min-height: 315px;
+    background-attachment: fixed;
+    background-image: url(../images/hero/profileBG_mobil.jpg);
+    background-position: center center;
+    background-size: cover;
+    @media screen and (min-width: 991px) {
+        background-image: url(../images/hero/profileBG.jpg);
+    }
+}
 @import url('https://fonts.googleapis.com/css?family=Roboto:300,400,900&display=swap&subset=cyrillic');
 @import "menu_2019-1.scss";
 @import "hero_2019-1.scss";
 @import "about.scss";
-@import "portfolio_2019-1.scss";
+//@import "portfolio_2019-1.scss";
 

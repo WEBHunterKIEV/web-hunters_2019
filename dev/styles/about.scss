@@ -1,4 +1,30 @@
 #about {
+    background: #fff;
+    .about_container {
+        display: flex;
+        flex-flow: row wrap;
+        background: #fff;
+        margin: 0 auto;
+        width: 90vw;
+        max-width: 700px;
+        .about_content_text {
+            //max-width: 300px;
+            h2,p {
+                padding: 3vh 0;
+                text-align: justify;
+            }
+        }
+        .about_content_image {
+            width: 100%;
+            text-align: center;
+            img {
+                width: 100%;
+                max-width: 300px;
+            }
+        }
+    }
+}
+/*#about {
     position: absolute;
     top: 100vw;
     width: 100%;
@@ -42,4 +68,4 @@
             }        
         }
     }
-}
+}*/

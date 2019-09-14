@@ -2,12 +2,11 @@
     background: #fff;
     @media screen and (min-width: 991px) {
         background: #7878e3d4;
-        border-radius: 0 0 20px 0;
     }
     .about_wrap {
         @media screen and (min-width: 991px) {
             position: relative;
-            top: -5vw;
+            top: -10vw;
             background: transparent;
             margin: 0 50px;
             border-left: 3px rgb(235, 236, 241) solid;

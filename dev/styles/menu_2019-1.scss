@@ -30,12 +30,16 @@ header
             }
         }
         .main_menu {
-            display: none;
+            display: flex;
+            justify-content: flex-start;
+            background: #7878e3d4;
+            min-height: 70px;
             @media screen and (min-width: 991px) {
-                display: flex;
                 justify-content: flex-end;
-                background: #7878e3d4;
-                .PC_nav {
+            }
+            .PC_nav {
+                display: none;
+                @media screen and (min-width: 991px) {
                     display: flex;
                     justify-content: space-around;
                     width: 400px;
@@ -50,10 +54,13 @@ header
                         font-size: 18px;
                     }
                 }
-                .contacts a {
+            }
+            .contacts a {
+                display: none;
+                @media screen and (min-width: 991px) {
                     display: flex;
                     align-items: center;
-                    height: 100%;
+                    height: 50px;
                     text-decoration: none;
                     color: #fff;
                     font-size: 15px;
@@ -61,14 +68,25 @@ header
                 }
             }
             h1 {
-                position: absolute;
-                left: 17vw;
-                font-size: 2vw;
-                padding: .5vw 1.5vw;
-                border-radius: 1vw;
-                background: #7878e3d4;
-                color: #fff;
+                display: flex;
+                align-items: center;
+                font-size: 120%;
+                padding: 2vw 4vw;
+                margin: 5px 4vw;
+                border-radius: 20px;
+                background: #fff;
+                color: #7878e3d4;
+                max-width: 300px;
+                height: 60px;
                 z-index: 10;
+                @media screen and (min-width: 991px) {
+                    font-size: 2vw;
+                    position: absolute;
+                    left: 17vw;
+                    padding: .5vw 1.5vw;
+                    max-width: unset;
+                    margin: 0;
+                }
             }
         }
         // mobile
@@ -84,13 +102,41 @@ header
             padding: 15px;
             margin: 5px;
             transition: all 600ms;
+            background: #7878e3d4;
             border: 1px #fff solid;
             border-radius: 5px;
             cursor: pointer;
             z-index: 20;
+            span {
+                display: block;
+                width: 100%;
+                height: 1px;
+                background: #fff;
+                transition: all 300ms;
+            }
             @media screen and (min-width: 991px) {
                 display: none;
             }
+        }
+        .mobile_navi {
+            display: flex;
+            flex-flow: column wrap;
+            justify-content: space-around;
+            position: fixed;
+            top: 0;
+            left: 100vw;
+            width: 100vw;
+            height: 100vh;
+            padding: 10vmax;
+            background: white;
+            z-index: 15;
+            transition: all 500ms;
+            @media screen and (min-width: 991px) {
+                display: none;
+            }
+        }
+        .mobile_navi_active {
+            left: 0;
         }
     }
 /*$nav_background: transparent;

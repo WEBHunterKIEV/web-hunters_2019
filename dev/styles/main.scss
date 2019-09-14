@@ -11,6 +11,7 @@ body {
     background-image: url(../images/hero/profileBG_mobil.jpg);
     background-position: center center;
     background-size: cover;
+    overflow-x: hidden;
     @media screen and (min-width: 991px) {
         background-image: url(../images/hero/profileBG.jpg);
     }

@@ -1,12 +1,11 @@
 #portfolio {
-    position: relative;
-    top: -10vw;
+    //position: relative;
+    //top: -10vw;
     background: rgb(235, 236, 241);
-    min-height: 1000px;
     .portfolio_container {
         display: flex;
         flex-flow: column nowrap;
-        margin: 0 auto;
+        padding: 50px 0;
         width: 100vw;
         h2 {
             padding: 4vw 6vw 2vw 6vw;

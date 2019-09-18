@@ -1,6 +1,67 @@
 #blog {
     background: white;
     min-height: 500px;
+    display: flex;
+    flex-flow: column nowrap;
+    width: 100vw;
+    padding-bottom: 5vw;
+    h2 {
+        padding: 10vw 6vw 0 6vw;
+    }
+    .blog_container {
+        display: grid;
+        padding: 0 50px;
+        grid-template-columns: 3fr 1fr;
+        .blog_wrap  {
+            display: flex;
+            flex-flow: column nowrap;
+            .blog_item {
+                display: grid;
+                grid-template-columns: 50px 1fr 3fr;
+                grid-template-rows: 50px 1fr 1fr;
+                padding-right: 5vw;
+                padding-bottom: 50px;
+                .blog_box {
+                    grid-column: 1 / 3;
+                    grid-row: 1 / 3;
+                    border: 1vw #7878e3 solid;
+                }
+                .blog_content {
+                    grid-column: 2 / 4;
+                    grid-row: 2 / 4;
+                    background: rgb(235, 236, 241);
+                    min-height: 10vw;
+                    display: grid;
+                    grid-template-columns: 200px 1fr;
+                    grid-template-rows: auto 1fr;
+                    .blog_title {
+                        grid-column: 2 / 4;
+                        grid-row: 1;
+                        background: #7878e3;
+                        border-top: 2px rgb(235, 236, 241) solid; 
+                        color: white;
+                        display: flex;
+                        justify-content: space-between;
+                        padding: 0 2vw;
+                    }
+                    .blog_image {
+                        border-top: 2px rgb(235, 236, 241) solid; 
+                        grid-column: 1;
+                        grid-row: 1 / 3;
+                    }
+                    .blog_text {
+                        grid-column: 2 / 4;
+                        grid-row: 2 / 4;
+                        display: flex;
+                        flex-flow: column nowrap;
+                        justify-content: space-between;
+                        padding: 2vw;
+                    }
+                }
+            }
+            
+        }
+    }   
     @media screen and (min-width: 991px) {
         //position: relative;
         //top: -10vw;

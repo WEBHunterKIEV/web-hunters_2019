@@ -4,7 +4,8 @@
     box-sizing: border-box;
 }
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    //font-family: 'Roboto', sans-serif;
     min-width: 315px;
     min-height: 315px;
     background-attachment: fixed;
@@ -16,7 +17,8 @@ body {
         background-image: url(../images/hero/profileBG.jpg);
     }
 }
-@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,900&display=swap&subset=cyrillic');
+//@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,900&display=swap&subset=cyrillic');
+@import url('https://fonts.googleapis.com/css?family=Cuprum:700|Montserrat&display=swap&subset=cyrillic');
 @import "menu_2019-1.scss";
 @import "hero_2019-1.scss";
 @import "about.scss";

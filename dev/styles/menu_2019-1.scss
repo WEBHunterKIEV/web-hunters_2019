@@ -70,11 +70,12 @@ header
             h1 {
                 display: flex;
                 align-items: center;
-                font-size: 120%;
+                font-size: 130%;
                 padding: 2vw 4vw;
                 margin: 5px 4vw;
                 border-radius: 20px;
                 background: #fff;
+                font-family: 'Cuprum', sans-serif;
                 color: #7878e3d4;
                 max-width: 300px;
                 height: 60px;
@@ -82,7 +83,7 @@ header
                 @media screen and (min-width: 991px) {
                     font-size: 2vw;
                     position: absolute;
-                    left: 17vw;
+                    left: 18vw;
                     padding: .5vw 1.5vw;
                     max-width: unset;
                     margin: 0;

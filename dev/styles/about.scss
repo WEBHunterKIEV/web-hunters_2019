@@ -3,6 +3,15 @@
     @media screen and (min-width: 991px) {
         background: #7878e3d4;
     }
+    .about_border {
+        position: relative;
+        top: -10vw;
+        margin-bottom: -10vw;
+        display: block;
+        height: 10vw;
+        width: 100%;
+        background: rgb(235, 236, 241);
+    }
     .about_wrap {
         @media screen and (min-width: 991px) {
             position: relative;

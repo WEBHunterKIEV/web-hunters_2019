@@ -108,6 +108,7 @@ header
             border-radius: 5px;
             cursor: pointer;
             z-index: 20;
+            transition: all 1s;
             span {
                 display: block;
                 width: 100%;
@@ -117,6 +118,22 @@ header
             }
             @media screen and (min-width: 991px) {
                 display: none;
+            }
+        }
+        .toggle_active {
+            span {
+                opacity: 0;
+            }
+            span:first-child,span:last-child {
+                opacity: 1;
+            }
+            span:first-child {
+                transform: rotate(405deg);
+                transform-origin: 5px 5px;
+            }
+            span:last-child {
+                transform: rotate(-405deg);
+                transform-origin: 0 -5px;
             }
         }
         .mobile_navi {

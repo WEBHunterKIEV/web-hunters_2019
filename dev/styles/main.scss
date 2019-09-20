@@ -9,9 +9,13 @@ body {
     min-height: 315px;
     background-attachment: fixed;
     background-image: url(../images/hero/profileBG_mobil.jpg);
-    background-position: center center;
-    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: 140vw;
     overflow-x: hidden;
+    @media screen and (min-width: 500px) {
+        background-size: 100vw;
+    }
     @media screen and (min-width: 991px) {
         background-image: url(../images/hero/profileBG.jpg);
     }
@@ -19,6 +23,9 @@ body {
             font-family: 'Cuprum', sans-serif;
             color: #7878e3d4;
             font-size: 8vw;
+            @media screen and (min-width: 500px) {
+                font-size: 2rem;
+            }
         }
 }
 @import url('https://fonts.googleapis.com/css?family=Cuprum:700|Montserrat&display=swap&subset=cyrillic');

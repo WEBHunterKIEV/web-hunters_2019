@@ -3,7 +3,7 @@
         position: relative;
         display: flex;
         background-color: #7878e3d4;
-        min-height: 100vh;
+        min-height: 80vh;
         justify-content: center;
         align-items: center;
         @media screen and (min-width: 991px) {
@@ -30,22 +30,11 @@
             }
             h2,p {
                 color: #fff;
-                padding: 3vh 0;
+                padding-bottom: 2rem;   
+            }
+            p {
                 text-align: justify;
             }
-            h2 {
-                font-family: 'Cuprum', sans-serif;
-                @media screen and (min-width: 991px) {
-                    font-size: 1.5vw;
-                    text-align: unset;
-                }
-            }
-            button {
-                background: white;
-                color: #151D51;
-                padding: .3vw 2vw;
-                border-radius: 5px;
-            } 
         }
     }
 }

@@ -120,6 +120,9 @@
                         padding: 2vw;
                         background: rgb(235, 236, 241);
                         z-index: 1;
+                        .blog_text_tags {
+                            padding-top: 2em;
+                        }
                         @media screen and (min-width: 550px) {
                             grid-column: 2 / 4;
                             grid-row: 2 / 4;

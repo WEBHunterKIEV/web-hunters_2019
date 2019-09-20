@@ -141,19 +141,20 @@ header
                 justify-content: space-around;
                 align-items: center;
                 li {
-                    margin: 5px;
+                    margin: 10px;
                     display: flex;
                     justify-content: center;
                     align-items: center;
-                    height: 70px;
                     width: 200px;
-                    border: 3px #7878e3d4 solid;
                     border-radius: 20px;
                     font-family: 'Cuprum', sans-serif;
-                    color: #7878e3d4;
+                    background: #7878e3d4;
                     a {
                         font-family: 'Cuprum', sans-serif;
+                        text-transform: uppercase;
+                        text-decoration: none;
                         font-size: 130%;
+                        color: #fff;
                         padding: 2vw 4vw;
                     }
                 }

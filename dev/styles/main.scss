@@ -5,7 +5,6 @@
 }
 body {
     font-family: 'Montserrat', sans-serif;
-    //font-family: 'Roboto', sans-serif;
     min-width: 315px;
     min-height: 315px;
     background-attachment: fixed;
@@ -16,8 +15,12 @@ body {
     @media screen and (min-width: 991px) {
         background-image: url(../images/hero/profileBG.jpg);
     }
+    h2 {
+            font-family: 'Cuprum', sans-serif;
+            color: #7878e3d4;
+            font-size: 8vw;
+        }
 }
-//@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,900&display=swap&subset=cyrillic');
 @import url('https://fonts.googleapis.com/css?family=Cuprum:700|Montserrat&display=swap&subset=cyrillic');
 @import "menu_2019-1.scss";
 @import "hero_2019-1.scss";

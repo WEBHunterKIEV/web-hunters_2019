@@ -7,8 +7,10 @@
         position: relative;
         top: -10vw;
         margin-bottom: -10vw;
-        display: block;
-        height: 10vw;
+        padding: 0 5vw;
+        display: flex;
+        align-items: center;
+        height: 20vw;
         width: 100%;
         background: rgb(235, 236, 241);
     }
@@ -35,17 +37,15 @@
                     justify-content: space-around;
                 }
                 .about_content_text {
+                    display: flex;
+                    flex-flow: column;
+                    justify-content: center;
                     @media screen and (min-width: 991px) {
                         width: 300px;
                     }
                     h2,p {
-                        padding: 3vh 0;
+                        padding: 3vw 0;
                         text-align: justify;
-                    }
-                    h2 {
-                        font-family: 'Cuprum', sans-serif;
-                        color: #7878e3d4;
-                        font-size: 2vw;
                     }
                 }
                 .about_content_image {

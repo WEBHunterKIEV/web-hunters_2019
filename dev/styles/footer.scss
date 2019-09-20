@@ -1,4 +1,65 @@
 #footer {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
     background: #7878e3;
+    padding-top: 5vw;
     min-height: 500px;
+    .logo {
+        h1 {
+            display: flex;
+            align-items: center;
+            font-size: 130%;
+            padding: 2vw 4vw;
+            border-radius: 20px;
+            background: #fff;
+            font-family: 'Cuprum', sans-serif;
+            color: #7878e3d4;
+            width: max-content;
+            max-width: 300px;
+            height: 60px;
+            z-index: 10;
+            @media screen and (min-width: 991px) {
+                font-size: 2vw;
+                padding: .5vw 1.5vw;
+                max-width: unset;
+                margin: 0;
+            }
+        }
+    }
+    .contacts {
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: center;
+        a {
+            font-family: 'Cuprum', sans-serif;
+            text-decoration: none;
+            color: #fff;
+            padding: 7px;
+            font-size: 6vw;
+        }
+    }
+    .menu {
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: center;
+        min-width: 200px;
+        a {
+            font-family: 'Cuprum', sans-serif;
+            text-decoration: none;
+            color: #fff;
+            padding: 7px;
+            font-size: 6vw;
+        }
+    }
+    .copy {
+        position: absolute;
+        text-align: center;
+        bottom: 0;
+        width: 100%;
+        padding: 5px;
+        background: black;
+        color: #fff;
+    }
 }

@@ -4,16 +4,10 @@
         flex-flow: column nowrap;
         width: 100vw;
         padding-bottom: 5vw;
-        h2 {
-            padding: 0 6vw;
-            font-family: 'Cuprum', sans-serif;
-            color: #7878e3d4;
-            font-size: 2vw;
-        }
         .portfolio_box_wrap {
             display: grid;
             grid-template-columns: 1fr;
-            padding-top: 50px;
+            padding-top: 0;
             @media screen and (min-width: 600px) {
                 grid-template-columns: repeat(2, 1fr);
             }

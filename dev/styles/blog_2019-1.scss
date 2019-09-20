@@ -9,20 +9,17 @@
         display: grid;
         padding: 2vw;
         grid-template-columns: 1fr;
-        @media screen and (min-width: 768px) {
-            grid-template-columns: 3fr 1fr;
-        }
         @media screen and (min-width: 991px) {
+            grid-template-columns: 3fr 1fr;
             padding: 50px;
         }
         .blog_nav {
             display: none;
-            @media screen and (min-width: 768px) {
+            @media screen and (min-width: 991px) {
                 display: block;
                 ul {
                     list-style: none;
                     font-family: 'Cuprum', sans-serif;
-                    color: #7878e3d4;
                     font-size: 2vw;
                     li {
                         display: flex;

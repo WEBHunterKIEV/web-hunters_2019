@@ -5,7 +5,6 @@
     flex-flow: row wrap;
     background: #7878e3;
     padding-top: 5vw;
-    min-height: 500px;
     .logo {
         h1 {
             display: flex;
@@ -37,7 +36,7 @@
             text-decoration: none;
             color: #fff;
             padding: 7px;
-            font-size: 6vw;
+            font-size: 2rem;
         }
     }
     .menu {
@@ -50,7 +49,7 @@
             text-decoration: none;
             color: #fff;
             padding: 7px;
-            font-size: 6vw;
+            font-size: 2rem;
         }
     }
     .copy {

@@ -121,7 +121,21 @@
                         background: rgb(235, 236, 241);
                         z-index: 1;
                         .blog_text_tags {
+                            display: flex;
+                            justify-content: space-between;
                             padding-top: 2em;
+                            a {
+                                background:#7878e3d4;
+                                color:#fff;
+                                font-size: 1rem;
+                                padding: .5rem 1rem;
+                                height: min-content;
+                                border-radius: 5px;
+                                text-decoration: none;
+                            }
+                            p {
+                                width: 100%;
+                            }
                         }
                         @media screen and (min-width: 550px) {
                             grid-column: 2 / 4;

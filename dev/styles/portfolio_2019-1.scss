@@ -4,6 +4,9 @@
     flex-flow: column nowrap;
     width: 100vw;
     padding-bottom: 5vw;
+    h2 {
+        padding: 1rem 5vw;
+    }
     .portfolio_box_wrap {
         display: grid;
         grid-template-columns: 1fr;
@@ -69,6 +72,7 @@
                 transition: all 500ms; 
                 justify-content: center;
                 align-items: center;
+                text-decoration: none;
                 @media screen and (min-width: 600px) {
                     opacity: 1;
                     background: none;
@@ -85,7 +89,6 @@
                     padding-top: 4em;
                     font-size: 1.2em;
                     color: white;
-                    text-decoration: none;
                 }
             }
         }
